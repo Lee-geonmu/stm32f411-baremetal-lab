@@ -1,52 +1,22 @@
-# Prerequisites
-*.d
-
-# Object files
+# CubeIDE / Eclipse 빌드 산출물
+Debug/
+Release/
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
+*.d
 *.su
-*.idb
-*.pdb
+*.list
+*.map
+.metadata/
+.settings/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# CubeIDE 프로젝트 캐시
+.cproject.bak
+RemoteSystemsTempFiles/
+
+# OS 잡파일
+.DS_Store
+Thumbs.db
+
+# 큰 CMSIS 벤더 파일은 포함하되(재현성 위해 필요),
+# 워크스페이스 메타파일은 제외
+workspace_*/.metadata/
