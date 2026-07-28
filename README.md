@@ -1,3 +1,12 @@
+| # | 제목 | 핵심 결과 |
+|---|---|---|
+| [CH01](ch01-clock/) | RCC/PLL 100MHz 클럭 | 실측 20.26MHz (오차 +1.3%) |
+| [CH02](ch02-gpio-slew/) | GPIO 드라이버 + 슬루레이트 | static inline으로 함수 오버헤드 제거 실증 |
+| [CH04](ch04-exti-debounce/) | EXTI 인터럽트 + 버튼 바운스 실측 | rc_w1 함정, 100회 디바운싱 정량 검증 |
+| [CH05](ch05-timer-deadtime/) | TIM1 상보 PWM + 데드타임 | 실측 2.000µs = 계산값 일치, F411 AF 매핑 발견 |
+| CH03 | BSRR 경쟁조건 (로직 애널라이저 도착 대기) | 예정 |
+| CH06~10 | UART DMA, ADC, SPI, I2C, IR (부품 도착 대기) | 예정 |
+
 # CH01 — RCC/PLL 100MHz 클럭 설정 및 오실로스코프 실측 검증
 
 > **한 줄 요약:** HAL 없이 레지스터 조작만으로 SYSCLK 100MHz를 구성하고,
